@@ -3,8 +3,8 @@ package com.shaymee.s1.wrapper;
 public class WrapperMain3 {
 // 하나씩 꺼내와서 숫자로 바꾼담에 곱하기를 해야함
 	public static void main(String[] args) {
-		String jumin = "960715-1041615";
-		// 9   3   0   4   0   2   -   1   1   2   7   3   1 , 1은 검증번호(계산X)
+		String jumin = "930402-1234567";
+		// 9   3   0   4   0   2   -                   , 은 검증번호(계산X)
 	// *   2   3   4   5   6   7       8   9   2   3   4   5
 	//    18 + 9 + 0 + 20 +0+ 14 +     8 + 9 + 4 +21 +12 + 5  = 합계 --> a(120)
 
@@ -16,7 +16,7 @@ public class WrapperMain3 {
 		
 		String num1 = jumin.substring(0, 6); // substring()에서 beginIndex는 이상, fromIndex는 미만. 0<=x<6
 		String num2 = jumin.substring(7, 14);
-		String jumin2 = num1+num2; // charAt(index) 대신 substring으로 -를 없앤뒤 두개를 붙여서 String 만듦
+		String jumin2 = num1+num2; // 
 		String[] strings = jumin2.split(""); // split으로 숫자 하나하나를 문자열배열로 만듦
 		
 		int[] a = new int[13]; // int배열 선언(크기는 주민번호처럼 13개)
